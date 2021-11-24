@@ -1,0 +1,431 @@
+html {
+  color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans JP', '微軟正黑體', sans-serif;
+  overflow-x: hidden;
+  color: white;
+  background-color: #ffb869;
+}
+
+hr {
+  height: 2px;
+  margin: 2% 0;
+  border: none;
+  background-color: #fffafa;
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+
+  color: #fffafa;
+  padding: 4% 0;
+}
+
+section.intro {
+  background-image: url("./images/radial.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1 {
+  font-size: 4em;
+}
+
+section p {
+  font-size: 1.25em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+
+section img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#mainlogo {
+  max-width: 45%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game p {
+  padding: 1.6em;
+  width: 50vw;
+  margin-top: 5%;
+}
+
+.game p.right{
+  border-width: 10px 0 10px 10px;
+  margin-left: auto;
+  border-style: solid none solid solid;
+}
+
+.game p.left {
+  border-width: 10px 10px 10px 0;
+  margin-right: auto;
+  border-style: solid solid solid none;
+}
+
+.game p a {
+  display: block;
+  margin-top: 1em;
+  background-color: gray;
+  padding: .5em;
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  text-align: center;
+}
+
+/* lunaria */
+
+.lunaria {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-color: #2DB299;
+}
+
+.lunaria p {
+  border-color: #99ea8b;
+  border-right: none;
+  background-color: #fb7479;
+  color: #ffffff;
+}
+
+/* priklepal */
+
+.priklepal {
+  background-image: url("./images/priklepal.png");
+  background-size: cover;
+}
+
+.priklepal p {
+  border-color: #ffa133;
+  background-color: #2cb299;
+  color: #ffffff;
+}
+
+.priklepal p a {
+  background-color: #fb7479;
+}
+
+/* baseball */
+
+.hyperrealistic {
+  background-size: cover;
+  background-position: top;
+  background-image: url("./images/bg1.png");
+}
+
+.hyperrealistic p {
+  border-color: #c2131c;
+  background-color: black;
+  color: #ffffff;
+}
+
+.hyperrealistic p a {
+  background-color: #c2131c;
+}
+
+/* baseball3 */
+
+.hyperrealistic3 {
+  background-size: cover;
+  background-image: url("./images/hrb3.png");
+}
+
+.hyperrealistic3 p {
+  border-color: #d68fff;
+  background-color:  white;
+  color: #8186d8;
+}
+
+.hyperrealistic3 p a {
+  background-color: #c2131c;
+}
+
+/* lifetech */
+
+.lifetech {
+  background-image: url("./images/lifetech.png");
+  background-color: #0E0A09;
+  background-size: cover;
+}
+
+.lifetech p {
+  border-color: #0e0b09;
+  background-color: #92ae005e;
+  color: #ffffff;
+  backdrop-filter: blur(5px);
+}
+
+.lifetech p a {
+  background-color: #9bb805;
+}
+
+/* Wipts project */
+.wipts {
+  background-color: #fff392;
+  background-image: url("./images/bg-cat.png");
+  background-size: 120px;
+  background-attachment: fixed;
+
+  animation-name: wipts-background;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.wipts p {
+  border-color: #ff61b2;
+  background-color: #fff392;
+  color: #ff61b2;
+}
+
+.wipts p a {
+  background-color: #ff61b2;
+}
+
+/* Devoid project */
+
+.devoid {
+  background-repeat: no-repeat;
+  background-color: #111111;
+  background-image: url("./images/Libi.png");
+  background-position: right;
+  background-size: 75vh;
+}
+
+.devoid p {
+  border-color: white;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.devoid p a {
+  background-color: white;
+  color: black;
+}
+
+/* CEAEC project */
+.ceaec {
+  background-color: #ffb0a2;
+  background-image: url("./images/rita.png");
+  background-position: right top;
+  background-size: 100vh;
+  background-repeat: no-repeat;
+}
+
+.ceaec p a {
+  background-color: white;
+  color: #ffb0a2;
+}
+
+/* Flourish project */
+.flourish {
+  background-image: url("./images/flourishbg.png");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.flourish p {
+  border-color: white;
+  background-color: #286660;
+  color:  white;
+}
+
+.flourish p a {
+  background-color: white;
+  color: #286660;
+}
+
+/* Flourish project */
+.flourishrg {
+  background-image: url("./images/flourishrgBG.png");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.flourishrg p {
+  border-color: #543a54;
+  background-color: #44ffbd;
+  color:  #543a54;
+}
+
+.flourishrg p a {
+  background-color: white;
+  color: #286660;
+}
+
+video {
+  min-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+  object-fit: fill;
+  background-color: #191919;
+}
+
+.project {
+  background-color: #ffb869;
+  padding: 5% 10%;
+}
+
+.project h1 {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.projectbox {
+  margin: 3% 0;
+}
+
+.projectitem {
+  color: #543a54;
+  padding: 1% 0;
+}
+
+.itemcontent {
+  background-color: #fffafa;
+  padding: 20px 40px;
+}
+
+.itemcontent h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.itemcontent p {
+  font-size: 150%;
+  margin-top: 0;
+}
+
+.itemcontent a {
+  font-weight: 300;
+  padding: 0% 2%;
+  color: #543a54;
+  text-decoration: none;
+}
+
+.itemcontent a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #ffb869;
+  padding: 2% 10% 0% 10%;
+  color: #fffafa;
+  text-align: center;
+}
+
+footer p {
+  padding: 0 0 3% 0;
+}
+
+.animate {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.one {
+animation-delay: 0.4s;
+}
+
+.two {
+animation-delay: 1s;
+}
+
+.three {
+animation-delay: 1.5s;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes expand {
+  from {
+    transform: scale(0, 1);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0, 1);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.expand {
+  animation-name: expand;
+}
+
+@keyframes wipts-background {
+  from {
+    background-position-x: 120px;
+  }
+
+  to {
+    background-position-x: 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .game p.right, .game p.left {
+    border-width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    width: 90vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {  }
