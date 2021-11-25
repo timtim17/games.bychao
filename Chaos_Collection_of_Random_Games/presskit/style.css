@@ -1,0 +1,29 @@
+.presskit {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.presskit div {
+  background-color: white;
+  color: #543a54;
+  font-family: 'Noto Sans JP', '微軟正黑體', sans-serif;
+  padding: 20px;
+  margin: 0 20px;
+  flex-grow: 1;
+}
+
+.presskit div p {
+  font-size: 16px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 20%;
+  margin: 10px;
+  flex-grow: 1;
+}

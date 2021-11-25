@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Lunaria';
+  src: url('./lunaria.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   color: white;
 }
@@ -29,6 +36,8 @@ section {
 
 section.intro {
   background-image: url("./images/radial.png");
+  background-size: cover;
+  font-family: 'Lunaria', 'Noto Sans JP', '微軟正黑體', sans-serif;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -36,7 +45,7 @@ section.intro {
 }
 
 section h1 {
-  font-size: 4em;
+  font-size: 64px;
 }
 
 section p {
@@ -288,11 +297,21 @@ video {
 
 .project {
   background-color: #ffb869;
+  font-family: 'Lunaria', 'Noto Sans JP', '微軟正黑體', sans-serif;
   padding: 5% 10%;
 }
 
 .project h1 {
-  color: rgba(255, 255, 255, 0.95);
+  color: white;
+  text-shadow:
+  #543a54 -4px -4px,
+  #543a54 4px 4px,
+  #543a54 -4px 4px,
+  #543a54 4px -4px,
+  #543a54 -4px 0px,
+  #543a54 4px 0px,
+  #543a54 0px -4px,
+  #543a54 0px 4px;
 }
 
 .projectbox {
@@ -300,7 +319,6 @@ video {
 }
 
 .projectitem {
-  color: #543a54;
   padding: 1% 0;
 }
 
@@ -309,14 +327,29 @@ video {
   padding: 20px 40px;
 }
 
-.itemcontent h2 {
-  font-size: 2em;
-  margin: 0;
+.intro h1, .itemcontent h2 {
+  font-size: 48px;
+  color: white;
+  text-shadow:
+  #543a54 -3px -3px,
+  #543a54 3px 3px,
+  #543a54 -3px 3px,
+  #543a54 3px -3px,
+  #543a54 -3px 0px,
+  #543a54 3px 0px,
+  #543a54 0px -3px,
+  #543a54 0px 3px;
+}
+
+.itemcontent h2 i {
+  color: #543a54;
+  text-shadow: none;
 }
 
 .itemcontent p {
-  font-size: 150%;
+  font-size: 28px;
   margin-top: 0;
+  color: #543a54;
 }
 
 .itemcontent a {
@@ -326,9 +359,10 @@ video {
   text-decoration: none;
 }
 
-.itemcontent a:hover {
-  text-decoration: underline;
+.itemcontent h2:hover {
+  color: #ffe569;
 }
+
 
 footer {
   background-color: #ffb869;
@@ -344,44 +378,6 @@ footer p {
 .animate {
   animation-duration: 0.5s;
   animation-fill-mode: both;
-}
-
-.one {
-animation-delay: 0.4s;
-}
-
-.two {
-animation-delay: 1s;
-}
-
-.three {
-animation-delay: 1.5s;
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.fadeInLeft {
-  animation-name: fadeInLeft;
-}
-
-@-webkit-keyframes expand {
-  from {
-    transform: scale(0, 1);
-  }
-
-  to {
-    transform: none;
-  }
 }
 
 @keyframes expand {
