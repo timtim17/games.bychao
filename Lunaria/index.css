@@ -45,7 +45,7 @@ section {
 }
 
 header {
-  background-image: url("images/background.png");
+  background-image: url("images/Background.png");
   background-repeat: repeat-x;
   background-position: top center;
   background-size: 100vw auto;
@@ -103,7 +103,7 @@ header {
 }
 
 #layer-moon {
-  background-image: url("images/moon.png");
+  background-image: url("images/Moon.png");
   background-size: 250px auto;
   background-position: 95% 10%;
   z-index: -5;
