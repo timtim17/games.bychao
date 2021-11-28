@@ -1,42 +1,41 @@
+@font-face {
+  font-family: 'Lunaria';
+  src: url('../fonts/lunaria.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pixel Mini';
+  src: url('../fonts/pixelmini.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Lato');
 /*General Styling*/
 
 body {
   /* Fixing the weird white space */
   margin: 0;
+  font-size: 1.5em;
+  font-family:  'Pixel Mini', Helvetica, sans-serif;
 }
 
 h1 {
   text-align: center;
   font-size: 3em;
+  font-family:  'Lunaria', Helvetica, sans-serif;
 }
 
-h2 {
-  font-size: 3em;
-  padding: 2% 0%;
-
-  margin: 0;
-}
-
-h3 {
-  font-size: 2em;
-  padding: 1% 0%;
-}
-
-p, li {
-  font-size: 1.5em;
+p {
   padding: 1% 0%;
   margin: 0;
-}
-
-ol, ul {
-  padding: 5%;
 }
 
 section, header, footer {
   background-color: #00152d;
   color: #e5f5f6;
-  font-family:  'Lato', Helvetica, sans-serif;
   height: 100vh;
 }
 
@@ -80,8 +79,13 @@ header {
 
 #layer-harper {
   background-image: url("images/Harper.png");
-  background-size: 180px auto;
+  background-size: 600px auto;
+  background-position: center 20vh;
   z-index: -2;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 #layer-mountain {
@@ -111,15 +115,6 @@ header {
 
 header p {
   padding-right: 50%;
-}
-
-header h1+p {
-  /*
-    Should probably use a span with class instead but I wanted to try out
-    the + selector thing
-  */
-  font-size: 2em;
-  font-weight: bold;
 }
 
 #header-mobile {
@@ -188,7 +183,6 @@ a:visited {
 /*Project section*/
 section > div {
   background-color: #e5f5f6;
-  border-radius: 10px;
   list-style-type: none;
   margin: 2% 0;
   padding: 2%;
