@@ -9,9 +9,9 @@
   window.addEventListener('load', init);
 
   /**
-  * Sets up functionality for the reduced motion checkbox. Also gets if the motion should be reduced
-  * from local storage and updates the page accordingly.
-  */
+   * Sets up functionality for the reduced motion checkbox. Also gets if the motion should be reduced
+   * from local storage and updates the page accordingly.
+   */
   function init() {
     const checkbox = qs('#reduced-motion-toggle input');
     checkbox.addEventListener('change', function() {
@@ -29,9 +29,9 @@
   }
 
   /**
-  * Adds or removes animation from the page.
-  * @param {boolean} reducedMotion if the motion should be reduced on the page
-  */
+   * Adds or removes animation from the page.
+   * @param {boolean} reducedMotion if the motion should be reduced on the page
+   */
   function setReducedMotion(reducedMotion) {
     if (reducedMotion) {
       document.body.classList.add(CLASS_REDUCED_MOTION);
