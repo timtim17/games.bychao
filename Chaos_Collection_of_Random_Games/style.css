@@ -34,14 +34,49 @@ section {
   padding: 4% 0;
 }
 
+#reduced-motion-toggle {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-shadow: -1px 1px 0 #543a54,
+               -2px 2px 0 #543a54;
+  top: 8px;
+  z-index: 1;
+}
+
 section.intro {
-  background-image: url("./images/radial.png");
-  background-size: cover;
   font-family: 'Lunaria', 'Noto Sans JP', '微軟正黑體', sans-serif;
-  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body.reduced-motion section.intro, body:not(.reduced-motion) section.intro::before {
+  background-image: url("./images/radial.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body:not(.reduced-motion) section.intro::before {
+  animation: rotate 30s linear infinite;
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 section h1 {
@@ -68,6 +103,19 @@ section img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+body:not(.reduced-motion) #mainlogo {
+  animation: hover 2s ease-in-out infinite;
+}
+
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 .game p {
@@ -191,7 +239,9 @@ section img {
   background-image: url("./images/bg-cat.png");
   background-size: 120px;
   background-attachment: fixed;
+}
 
+body:not(.reduced-motion) .wipts {
   animation-name: wipts-background;
   animation-duration: 2s;
   animation-iteration-count: infinite;
