@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Lunaria';
-  src: url('./lunaria.ttf');
+  src: url('../fonts/lunaria.ttf');
   font-weight: 400;
   font-style: normal;
 }
@@ -34,15 +34,21 @@ section {
   padding: 4% 0;
 }
 
-#reduced-motion-toggle {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  text-shadow: -1px 1px 0 #543a54,
-               -2px 2px 0 #543a54;
-  top: 8px;
+aside {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 3px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
   z-index: 1;
+  background-color: #434343;
+}
+
+aside label, aside input {
+  user-select: none;
+  cursor: pointer;
 }
 
 section.intro {
@@ -75,7 +81,7 @@ body:not(.reduced-motion) section.intro::before {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -415,14 +421,14 @@ video {
 
 
 footer {
-  background-color: #ffb869;
-  padding: 2% 10% 0% 10%;
+  background-color: #434343;
+  padding: 10px;
   color: #fffafa;
   text-align: center;
 }
 
 footer p {
-  padding: 0 0 3% 0;
+  margin: 0;
 }
 
 .animate {

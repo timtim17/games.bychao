@@ -13,7 +13,7 @@
    * from local storage and updates the page accordingly.
    */
   function init() {
-    const checkbox = qs('#reduced-motion-toggle input');
+    const checkbox = qs('#reduced-motion-toggle');
     checkbox.addEventListener('change', function() {
       setReducedMotion(this.checked);
       localStorage.setItem(LS_REDUCED_MOTION, this.checked);
